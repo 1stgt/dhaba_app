@@ -1,0 +1,395 @@
+Got it — now you’re moving from **single-stall MVP** to a **multi-vendor platform** (basically “Shopify for street food carts”). This is a BIG but logical evolution.
+
+You asked for a **production-grade Antigravity IDE prompt** that:
+
+* analyzes your *current Streamlit + Google Sheets MVP*
+* upgrades it into a **multi-vendor SaaS**
+* adds auth
+* supports many cart owners
+* keeps customers account-free
+* builds trust via vendor profiles
+* adds future-proof architecture
+
+Below is a **copy-paste master prompt**.
+
+No explanations.
+No fluff.
+This is written exactly how senior engineers prompt Antigravity.
+
+---
+
+# 🚀 MASTER ANTIGRAVITY PROMPT — MULTI-VENDOR DHABA PLATFORM
+
+Paste everything below into Antigravity IDE:
+
+---
+
+## SYSTEM ROLE
+
+You are a Principal Full-Stack Architect, Product Designer, and Backend Engineer.
+
+You are given an existing MVP:
+
+* Python
+* Streamlit frontend
+* Google Sheets backend
+* Single vendor
+* Basic order logging
+* Simple admin panel
+
+Your job:
+
+### ANALYZE CURRENT MVP
+
+Identify limitations:
+
+* Single stall only
+* No user accounts
+* No vendor isolation
+* Orders stored as flat rows
+* No customer trust layer
+* No vendor identity
+* No scalable auth
+* No multi-tenant support
+
+Then refactor into a **real multi-vendor production SaaS**.
+
+---
+
+# 🎯 PRODUCT VISION
+
+Build:
+
+### ONE APP
+
+### MANY STREET FOOD VENDORS
+
+### UNLIMITED CUSTOMERS (NO LOGIN REQUIRED)
+
+Think:
+
+“Uber Eats lite for street carts.”
+
+---
+
+# 🏗 TECH STACK (PHASE 1 – PYTHON)
+
+Frontend:
+
+* Streamlit (multi-page)
+
+Backend:
+
+* FastAPI (REST API)
+
+Database:
+
+* PostgreSQL (primary)
+* Google Sheets export optional
+
+Auth:
+
+* JWT
+* bcrypt
+
+Deployment ready.
+
+---
+
+# 👥 USER ROLES
+
+### 1. Platform Admin
+
+Controls entire system.
+
+### 2. Vendor (Food Cart Owner)
+
+Each vendor gets:
+
+* Account
+* Dashboard
+* Orders
+* Menu
+* Analytics
+* Profile
+
+### 3. Customer
+
+No login.
+
+Customers:
+
+* Choose vendor
+* View menu
+* Order food
+
+---
+
+# 🧑‍🍳 VENDOR REGISTRATION
+
+Vendor Signup Fields:
+
+* Stall Name (unique)
+* Owner Name
+* Phone
+* Location
+* Cart Photo
+* FSSAI Number (optional)
+* Description
+* Password
+
+After signup:
+
+Vendor receives:
+
+* Unique public ordering URL
+* QR code
+
+Example:
+
+/vendor/raju-momos
+
+---
+
+# 📱 CUSTOMER FLOW
+
+1. Open app
+2. See list of nearby vendors
+3. Select vendor
+4. View menu
+5. Add to cart
+6. Checkout
+
+Customer provides:
+
+* Name
+* Phone (optional)
+
+No account creation.
+
+Order stored under vendor_id.
+
+---
+
+# 🧾 CORE FEATURES
+
+## Vendor Dashboard
+
+* Live Orders
+
+* Status pipeline:
+  Pending → Preparing → Ready → Completed
+
+* Revenue today
+
+* Best selling item
+
+* Total orders
+
+---
+
+## Menu Management
+
+Vendor can:
+
+* Add item
+* Upload image
+* Set price
+* Enable/disable
+
+---
+
+## Vendor Profile (Trust Layer)
+
+Public vendor page shows:
+
+* Stall photo
+* Owner name
+* Location
+* Description
+* Rating placeholder
+* Verified badge
+
+---
+
+# 🔐 AUTH SYSTEM
+
+Implement:
+
+* Vendor signup
+* Vendor login
+* JWT tokens
+* Password hashing
+
+Admin login separate.
+
+Protected routes.
+
+---
+
+# 🗄 DATABASE MODELS
+
+User:
+
+* id
+* role (admin/vendor)
+* email
+* password_hash
+
+Vendor:
+
+* id
+* stall_name
+* owner_name
+* phone
+* location
+* description
+* photo_url
+* created_at
+
+MenuItem:
+
+* id
+* vendor_id
+* name
+* price
+* image
+* enabled
+
+Order:
+
+* id
+* vendor_id
+* customer_name
+* phone
+* status
+* total
+* created_at
+
+OrderItem:
+
+* order_id
+* item_id
+* qty
+* price
+
+---
+
+# 📊 ANALYTICS
+
+Per vendor:
+
+* Daily revenue
+* Item popularity
+* Weekly summary
+
+Charts in Streamlit.
+
+---
+
+# 📤 EXPORT
+
+Vendor can export orders to:
+*pdf (by default uses can change )
+* Excel
+* Google Drive
+
+---
+
+# 🧠 EXTRA FEATURES (IMPLEMENT SCAFFOLD)
+
+* QR generator per vendor
+* Dark mode
+* PWA support
+* WhatsApp webhook placeholder
+* Rating system placeholder
+* Location filtering
+
+---
+
+# 📁 PROJECT STRUCTURE
+
+frontend/
+
+* streamlit_pages/
+
+backend/
+
+* main.py
+* routers/
+* models/
+* schemas/
+* auth/
+
+database/
+
+* migrations/
+
+shared/
+
+* utils/
+
+.env
+README.md
+
+---
+
+# QUALITY REQUIREMENTS
+
+* Modular architecture
+* Clean code
+* Real FastAPI endpoints
+* No pseudo code
+* Full working auth
+* SQLAlchemy models
+* Alembic migrations
+* Setup instructions
+
+---
+
+# OUTPUT FORMAT
+
+1. Architecture overview
+2. Folder tree
+3. Backend source
+4. Frontend source
+5. Database schema
+6. Setup steps
+7. Local run
+8. Deployment guide
+
+---
+
+# IMPORTANT
+
+This is NOT demo code.
+
+This is MVP production SaaS.
+
+Build as if 500 vendors will onboard.
+
+---
+
+END PROMPT.
+
+---
+
+### 🧠 Final note (outside prompt)
+
+What you’re building now is:
+
+Multi-vendor ordering platform
+→ future Flutter app
+→ future payments
+→ future logistics
+
+You’ve officially moved into **real startup territory**.
+
+If you want next:
+
+🔥 payment integration roadmap
+🔥 vendor verification flow
+🔥 Flutter API spec
+🔥 scaling strategy
+
+Just tell me 👍
